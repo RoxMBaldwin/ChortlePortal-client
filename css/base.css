@@ -1,0 +1,144 @@
+html {
+  height: 100%;
+  margin: 0; }
+  html body {
+    height: 100%;
+    margin: 0; }
+    html body div.wrapper {
+      min-height: 100%;
+      margin-bottom: -50px; }
+      html body div.wrapper header .nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #702320;
+        background: linear-gradient(to bottom right, #A6342F, #C75F5A);
+        font-family: "Averia Libre", cursive; }
+        html body div.wrapper header .nav img.logo {
+          margin: .75em;
+          height: 5em;
+          width: 5em; }
+        html body div.wrapper header .nav h1.name {
+          color: #CCE2F5;
+          font-family: "Averia Libre", cursive;
+          font-size: 2em;
+          text-align: center;
+          margin: 10px 0 20px 0; }
+      html body div.wrapper main .login {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 10%; }
+        html body div.wrapper main .login form.login-form.container {
+          display: flex;
+          justify-content: center;
+          margin-bottom: 30px; }
+          html body div.wrapper main .login form.login-form.container div .row {
+            display: flex;
+            justify-content: center;
+            flex-direction: column; }
+            html body div.wrapper main .login form.login-form.container div .row .column {
+              display: flex;
+              flex-direction: column;
+              align-items: center; }
+              html body div.wrapper main .login form.login-form.container div .row .column .twelve.columns {
+                width: 100%;
+                float: left;
+                box-sizing: border-box;
+                display: flex;
+                justify-content: center;
+                align-items: baseline;
+                color: #702320;
+                font-family: Helvetica;
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 40px;
+                letter-spacing: 0.1rem;
+                text-transform: uppercase;
+                margin: 1em; }
+                html body div.wrapper main .login form.login-form.container div .row .column .twelve.columns label {
+                  padding: 0 0.5em 0 0; }
+                html body div.wrapper main .login form.login-form.container div .row .column .twelve.columns input[type="email"],
+                html body div.wrapper main .login form.login-form.container div .row .column .twelve.columns input[type="password"],
+                html body div.wrapper main .login form.login-form.container div .row .column .twelve.columns textarea {
+                  -webkit-appearance: none;
+                  -moz-appearance: none;
+                  appearance: none;
+                  border: 1px solid #d05e59;
+                  border-radius: 4px;
+                  height: 1em;
+                  padding: .5em; }
+          html body div.wrapper main .login form.login-form.container div div.mainButtons a.mainLink {
+            text-decoration: none; }
+            html body div.wrapper main .login form.login-form.container div div.mainButtons a.mainLink button.loginButton {
+              color: #702320;
+              background-color: transparent;
+              display: inline-block;
+              height: 38px;
+              padding: 0 30px;
+              text-align: center;
+              font-family: Helvetica;
+              font-size: 13px;
+              font-weight: 600;
+              line-height: 38px;
+              letter-spacing: 0.1rem;
+              text-transform: uppercase;
+              text-decoration: none;
+              white-space: nowrap;
+              border-radius: 5px;
+              border: 2px solid;
+              border-color: #CCE2F5;
+              cursor: pointer;
+              box-sizing: border-box;
+              margin: 1em; }
+            html body div.wrapper main .login form.login-form.container div div.mainButtons a.mainLink button.loginButton:hover {
+              color: #CCE2F5;
+              border-color: #CCE2F5;
+              background-color: #d05e59;
+              outline: 0; }
+          html body div.wrapper main .login form.login-form.container div div.mainButtons button.register {
+            color: #702320;
+            background-color: transparent;
+            display: inline-block;
+            height: 38px;
+            padding: 0 30px;
+            text-align: center;
+            font-family: Helvetica;
+            font-size: 13px;
+            font-weight: 600;
+            line-height: 38px;
+            letter-spacing: 0.1rem;
+            text-transform: uppercase;
+            text-decoration: none;
+            white-space: nowrap;
+            border-radius: 5px;
+            border: 2px solid;
+            border-color: #CCE2F5;
+            cursor: pointer;
+            box-sizing: border-box;
+            margin: 1em; }
+          html body div.wrapper main .login form.login-form.container div div.mainButtons button.register:hover {
+            color: #CCE2F5;
+            border-color: #CCE2F5;
+            outline: 0; }
+    html body footer.footer {
+      display: flex;
+      justify-content: center;
+      font-family: "Averia Libre", cursive;
+      color: #CCE2F5;
+      background: linear-gradient(to bottom right, #A6342F, #C75F5A);
+      height: 50px; }
+
+/* map styling */
+#map {
+  width: 900px;
+  height: 700px; }
+
+.userMap {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 20px; }
+
+/*# sourceMappingURL=base.css.map */

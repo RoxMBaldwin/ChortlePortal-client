@@ -1,0 +1,204 @@
+$mainFont: 'Averia Libre', cursive;
+$subFont: Helvetica;
+
+$warmColor: #702320;
+$lightenedWarm: lighten($warmColor, 30%);
+$coolColor: #CCE2F5;
+$secondaryCool: #88BDD1;
+$coolGradient: linear-gradient(to bottom right,#A6342F, #C75F5A);
+
+$button-background-color: transparent;
+$buttonDisplay: inline-block;
+$buttonHeight: 38px;
+$buttonPadding: 0 30px;
+$button-text-align: center;
+$button-font-size: 13px;
+$button-font-weight: 600;
+$button-line-height: 38px;
+$button-letter-spacing: .1rem;
+$button-text-transform: uppercase;
+$button-text-decoration: none;
+$button-white-space: nowrap;
+$button-border-radius: 5px;
+$buttonBorder: 2px solid;
+$buttonCursor: pointer;
+$button-box-sizing: border-box;
+$buttonMargin: 1em;
+
+
+html {
+  height: 100%;
+  margin: 0;
+  body {
+    height: 100%;
+    margin: 0;
+    div.wrapper{
+      min-height: 100%;
+      margin-bottom: -50px;
+      header {
+        .nav {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          color: $warmColor;
+          background: $coolGradient;
+          // height: 14vh;
+          font-family: $mainFont;
+          img.logo {
+              margin: .75em;
+              height: 5em;
+              width: 5em;
+            }
+            h1.name {
+              color: $coolColor;
+              font-family: $mainFont;
+              font-size: 2em;
+              text-align: center;
+              margin: 10px 0 20px 0;
+            }
+        }
+      }
+      main {
+        .login {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          margin-top: 10%;
+          form.login-form.container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+            div {
+              .row {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                .column {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  .twelve.columns {
+                    width: 100%;
+                    float: left;
+                    box-sizing: border-box;
+                    display: flex;
+                    justify-content: center;
+                    align-items: baseline;
+                    color: $warmColor;
+                    font-family: $subFont;
+                    font-size: 14px;
+                    font-weight: 600;
+                    line-height: 40px;
+                    letter-spacing: $button-letter-spacing;
+                    text-transform: uppercase;
+                    margin: 1em;
+                    label {
+                      padding: 0 .5em 0 0 ;
+                    }
+                    input[type="email"],
+                    input[type="password"],
+                    textarea {
+                      -webkit-appearance: none;
+                         -moz-appearance: none;
+                              appearance: none;
+                              border: 1px solid $lightenedWarm;
+                              border-radius: 4px;
+                              height: 1em;
+                              padding: .5em;
+                    }
+                  }
+                }
+              }
+              div.mainButtons {
+
+                a.mainLink {
+                  text-decoration: none;
+
+                  button.loginButton {
+                    color: $warmColor;
+                    background-color: $button-background-color;
+                    display: $buttonDisplay;
+                    height: $buttonHeight;
+                    padding: $buttonPadding;
+                    text-align: $button-text-align;
+                    font-family: $subFont;
+                    font-size: $button-font-size;
+                    font-weight: $button-font-weight;
+                    line-height: $button-line-height;
+                    letter-spacing: $button-letter-spacing;
+                    text-transform: $button-text-transform;
+                    text-decoration: $button-text-decoration;
+                    white-space: $button-white-space;
+                    border-radius: $button-border-radius;
+                    border: $buttonBorder;
+                    border-color: $coolColor;
+                    cursor: $buttonCursor;
+                    box-sizing: $button-box-sizing;
+                    margin: $buttonMargin;
+                  }
+                  button.loginButton:hover {
+                    color: $coolColor;
+                    border-color: $coolColor;
+                    background-color: $lightenedWarm;
+                    outline: 0;
+                  }
+                }
+                button.register {
+                  color: $warmColor;
+                  background-color: $button-background-color;
+                  display: $buttonDisplay;
+                  height: $buttonHeight;
+                  padding: $buttonPadding;
+                  text-align: $button-text-align;
+                  font-family: $subFont;
+                  font-size: $button-font-size;
+                  font-weight: $button-font-weight;
+                  line-height: $button-line-height;
+                  letter-spacing: $button-letter-spacing;
+                  text-transform: $button-text-transform;
+                  text-decoration: $button-text-decoration;
+                  white-space: $button-white-space;
+                  border-radius: $button-border-radius;
+                  border: $buttonBorder;
+                  border-color: $coolColor;
+                  cursor: $buttonCursor;
+                  box-sizing: $button-box-sizing;
+                  margin: $buttonMargin;
+                }
+                button.register:hover {
+                  color: $coolColor;
+                  border-color: $coolColor;
+                  outline: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    footer.footer {
+      display: flex;
+      justify-content: center;
+      font-family: $mainFont;
+      color: $coolColor;
+      background: $coolGradient;
+      height: 50px;
+    }
+  }
+}
+
+
+/* map styling */
+
+#map {
+  width: 900px;
+  height: 700px;
+}
+
+.userMap {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}

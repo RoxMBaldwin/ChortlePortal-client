@@ -2,43 +2,47 @@
 <html ng-app="chortlePortal">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Oswald|Paytone+One" rel="stylesheet">
+    <link rel="stylesheet" href="css/base.css">
+    <link href="https://fonts.googleapis.com/css?family=Averia+Libre" rel="stylesheet">
     <meta charset="utf-8">
     <title>Chortle Portal</title>
   </head>
   <body>
+    <div class="wrapper">
     <header>
       <nav class="nav">
-        <h3></h3>
-        <img class="logo" src="assets/ChortlePortal-logo.png" alt="">
+        <img class="logo" src="assets/logo-chortlePortal.png" alt="">
+        <h1 class="name">CHORTLE PORTAL</h1>
       </nav>
     </header>
     <main>
       <div class="login">
-        <h1>Chortle Portal</h1>
+
+        <form class="login-form container">
+          <div>
+            <div class="row">
+              <div class="column">
+                <div class="twelve columns">
+                  <label for="email">username</label>
+                  <input class="u-full-width" type="email" autocomplete="off" placeholder="...">
+                </div>
+                <div class="twelve columns">
+                  <label for="password">password</label>
+                  <input class="u-full-width" type="password" autocomplete="off" placeholder="..." >
+                </div>
+              </div>
+              <div class="mainButtons">
+                <a href="./main.html" class="mainLink">
+                  <button type="button" name="login" class="loginButton">Login</button>
+                </a>
+                <button type="button" name="register" class="register">Register</button>
+              </div>
+            </div>
+          </div>
+        </form>
       </div>
-      <form class="login-form container">
-        <div class=>
-          <div class="row">
-            <div class="twelve columns">
-              <label for="email">Username</label>
-              <input class="u-full-width" type="email" placeholder="testy123">
-            </div>
-          </div>
-          <div class="row">
-            <div class="twelve columns">
-              <label for="password">Password</label>
-              <input class="u-full-width" type="password" placeholder="password">
-            </div>
-          </div>
-          <a href="./main.html" class="mainLink">
-            <button type="button" name="login" class="loginButton">Login</button>
-          </a>
-          <button type="button" name="register" class="register">Register</button>
-        </div>
-      </form>
     </main>
+  </div>
     <footer class="footer">
       <p class="footerText">© 2017 DarkSouls</p>
     </footer>

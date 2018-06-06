@@ -111,10 +111,8 @@ html {
                 }
               }
               div.mainButtons {
-
                 a.mainLink {
                   text-decoration: none;
-
                   button.loginButton {
                     color: $warmColor;
                     background-color: $button-background-color;
@@ -186,97 +184,101 @@ html {
       height: 50px;
     }
   }
-  div.appContainer{
-    .ng-isolate-scope{
+  body {
+    nav.nav {
       display: flex;
-      justify-content: center;
-      flex-direction: column;
-      map.ng-isolate-scope {
-        nav.nav{
-          display: flex;
-          flex-direction: row-reverse;
-          justify-content:space-between;
-          align-items: center;
-          color: $warmColor;
-          background: $coolGradient;
-          // height: 14vh;
-          font-family: $mainFont;
-          img.logo{
-            display: flex;
-            align-items: center;
-            padding: 10px 10px 10px 20px;
-            margin: .75em;
-            height: 5em;
-            width: 5em;
-          }
-          div.userInfo {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            padding: 10px 10px 10px 20px;
-            margin: .75em;
-            div.username-row {
-              h6 {
-                font-family: $subFont;
-                letter-spacing: $button-letter-spacing;
-                margin: 0 10px 0 10px;
-                a {
-                  text-decoration: none;
-                  letter-spacing: $button-letter-spacing;
-                }
-              }
-            }
-          }
-        }
-        div.userMap {
-          display: flex;
-          justify-content: center;
-          flex-direction: column;
-          margin-top: 40px;
-          margin-bottom: 20px;
-          div.twelve.columns {
-            display: flex;
-            justify-content: center;
-          }
-          div.addButton {
-            display: flex;
-            justify-content: center;
-            text-align: center;
-            font-size: 30px;
-            font-weight: bold;
-            button.addButton {
-              display: flex;
-              justify-content: center;
-              color: $warmColor;
-              background-color: $button-background-color;
-              display: $buttonDisplay;
-              height: $buttonHeight;
-              padding: $buttonPadding;
-              text-align: $button-text-align;
-              font-family: $subFont;
-              font-size: $button-font-size;
-              font-weight: $button-font-weight;
-              line-height: $button-line-height;
+      flex-direction: row-reverse;
+      justify-content:space-between;
+      align-items: center;
+      color: $warmColor;
+      background: $coolGradient;
+      // height: 14vh;
+      font-family: $mainFont;
+      img.logo {
+        display: flex;
+        align-items: center;
+        padding: 10px 10px 10px 20px;
+        margin: .75em;
+        height: 5em;
+        width: 5em;
+      }
+      div.userInfo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px 10px 10px 20px;
+        margin: .75em;
+        div.username-row {
+          h6 {
+            font-family: $subFont;
+            letter-spacing: $button-letter-spacing;
+            margin: 0 10px 0 10px;
+            a {
+              text-decoration: none;
               letter-spacing: $button-letter-spacing;
-              text-transform: $button-text-transform;
-              text-decoration: $button-text-decoration;
-              white-space: $button-white-space;
-              border-radius: $button-border-radius;
-              border: $buttonBorder;
-              border-color: $coolColor;
-              cursor: $buttonCursor;
-              box-sizing: $button-box-sizing;
-              margin: $buttonMargin;
-            }
-            button.addButton:hover {
-              color: $coolColor;
-              border-color: $coolColor;
-              background-color: $lightenedWarm;
-              outline: 0;
             }
           }
         }
       }
+    }
+    div.appContainer {
+      min-height: 90%;
+      margin-bottom: -50px;
+      /*map componet*/
+      .ng-isolate-scope{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        map.ng-isolate-scope {
+          div.userMap {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            div.twelve.columns {
+              display: flex;
+              justify-content: center;
+            }
+            div.addButton {
+              display: flex;
+              justify-content: center;
+              text-align: center;
+              font-size: 30px;
+              font-weight: bold;
+              button.addButton {
+                display: flex;
+                justify-content: center;
+                color: $warmColor;
+                background-color: $button-background-color;
+                display: $buttonDisplay;
+                height: $buttonHeight;
+                padding: $buttonPadding;
+                text-align: $button-text-align;
+                font-family: $subFont;
+                font-size: $button-font-size;
+                font-weight: $button-font-weight;
+                line-height: $button-line-height;
+                letter-spacing: $button-letter-spacing;
+                text-transform: $button-text-transform;
+                text-decoration: $button-text-decoration;
+                white-space: $button-white-space;
+                border-radius: $button-border-radius;
+                border: $buttonBorder;
+                border-color: $coolColor;
+                cursor: $buttonCursor;
+                box-sizing: $button-box-sizing;
+                margin: $buttonMargin;
+              }
+              button.addButton:hover {
+                color: $coolColor;
+                border-color: $coolColor;
+                background-color: $lightenedWarm;
+                outline: 0;
+              }
+            }
+          }
+        }
         /*new chortle component*/
         .ng-isolate-scope{
           div.newChortleContainer {
@@ -314,7 +316,15 @@ html {
           }
         }
       }
-
+    }
+    footer.footer {
+      display: flex;
+      justify-content: center;
+      font-family: $mainFont;
+      color: $coolColor;
+      background: $coolGradient;
+      height: 50px;
+    }
   }
 }
   /* Media Query */

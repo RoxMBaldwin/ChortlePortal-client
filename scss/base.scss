@@ -287,9 +287,7 @@ html {
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            // width: 80%;
             font-family: $subFont;
-            // background-color: $coolColor;
             margin: 0;
             form.newform {
               display: flex;
@@ -299,10 +297,12 @@ html {
               margin-top: 60px;
               margin-left: 5px;
               margin-right: 5px;
+              margin-bottom: 50px;
               div.upload-file{
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+                margin: 20px 0;
                 button {
                   color: $warmColor;
                   background-color: $button-background-color;
@@ -320,7 +320,7 @@ html {
                   white-space: $button-white-space;
                   border-radius: $button-border-radius;
                   border: $buttonBorder;
-                  border-color: $coolColor;
+                  border-color: $warmColor;
                   cursor: $buttonCursor;
                   box-sizing: $button-box-sizing;
                   margin: $buttonMargin;
@@ -344,18 +344,14 @@ html {
                 width: 270px;
                 height: 30px;
                 margin: 10px;
-
               }
               input[type="text"],
               textarea {
-                min-height: 65px;
-                padding-top: 6px;
-                padding-bottom: 6px; }
-
-              // input {
-              //   width: 270px;
-              //   height: 30px;
-              // }
+                // font-style: italic;
+                border: 2px solid $warmColor;
+                border-radius: $button-border-radius;
+                padding: 6px 6px 6px 8px;
+              }
             }
             div.PEDbuttons {
               display: flex;
@@ -421,14 +417,6 @@ html {
       height: 375px;
       width: 375px;
     }
-    // .newChortleContainer {
-    //   display: flex;
-    //   flex-direction: column;
-    //   justify-content: center;
-    //   margin-top: 20px;
-    //   margin-left: 50px;
-    //   margin-right: 50px;
-    // }
   }
 
   @media (min-width: 600px) {
@@ -436,14 +424,6 @@ html {
       height: 475px;
       width: 575px;
     }
-    // .newChortleContainer {
-    //   display: flex;
-    //   flex-direction: column;
-    //   justify-content: center;
-    //   margin-top: 20px;
-    //   margin-left: 100px;
-    //   margin-right: 100px;
-    // }
   }
 
   @media (min-width: 800px) {
@@ -451,14 +431,6 @@ html {
       height: 500px;
       width: 750px;
     }
-    // .newChortleContainer {
-    //   display: flex;
-    //   flex-direction: column;
-    //   justify-content: center;
-    //   margin-top: 20px;
-    //   margin-left: 200px;
-    //   margin-right: 200px;
-    // }
   }
 
   @media (min-width: 1000px) {
@@ -466,32 +438,4 @@ html {
       height: 500px;
       width: 950px;
     }
-    // .newChortleContainer {
-    //   display: flex;
-    //   flex-direction: column;
-    //   justify-content: center;
-    //   margin-top: 20px;
-    //   margin-left: 300px;
-    //   margin-right: 300px;
-    // }
   }
-
-
-// /* map styling */
-// @media (min-width: 310px){
-//   #map {
-//     height: 300px;
-//     width: 300px;
-//   }
-// }
-// #map {
-//   width: 900px;
-//   height: 700px;
-// }
-//
-// .userMap {
-//   display: flex;
-//   justify-content: center;
-//   margin-top: 40px;
-//   margin-bottom: 20px;
-// }

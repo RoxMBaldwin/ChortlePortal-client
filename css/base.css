@@ -120,6 +120,7 @@ html {
             margin: 1em; }
           html body div.wrapper main .login form.login-form.container div div.mainButtons button.register:hover {
             color: #CCE2F5;
+            background-color: #d05e59;
             border-color: #CCE2F5;
             outline: 0; }
     html body footer.footer {
@@ -213,29 +214,97 @@ html {
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
         font-family: Helvetica;
-        background-color: #CCE2F5;
         margin: 0; }
         html body div.appContainer .ng-isolate-scope .ng-isolate-scope div.newChortleContainer form.newform {
           display: flex;
           flex-direction: column;
-          justify-content: center;
           align-items: center;
+          text-align: center;
           margin-top: 60px;
           margin-left: 5px;
           margin-right: 5px; }
-          html body div.appContainer .ng-isolate-scope .ng-isolate-scope div.newChortleContainer form.newform input {
-            width: 270px;
-            height: 30px; }
-          html body div.appContainer .ng-isolate-scope .ng-isolate-scope div.newChortleContainer form.newform input#capture.input {
+          html body div.appContainer .ng-isolate-scope .ng-isolate-scope div.newChortleContainer form.newform div.upload-file {
             display: flex;
-            justify-content: center;
-            margin: 10px; }
-          html body div.appContainer .ng-isolate-scope .ng-isolate-scope div.newChortleContainer form.newform .chortle-form {
+            flex-direction: column;
+            justify-content: center; }
+            html body div.appContainer .ng-isolate-scope .ng-isolate-scope div.newChortleContainer form.newform div.upload-file button {
+              color: #702320;
+              background-color: transparent;
+              display: inline-block;
+              height: 38px;
+              padding: 0 30px;
+              text-align: center;
+              font-family: Helvetica;
+              font-size: 13px;
+              font-weight: 600;
+              line-height: 38px;
+              letter-spacing: 0.1rem;
+              text-transform: uppercase;
+              text-decoration: none;
+              white-space: nowrap;
+              border-radius: 5px;
+              border: 2px solid;
+              border-color: #CCE2F5;
+              cursor: pointer;
+              box-sizing: border-box;
+              margin: 1em;
+              position: sticky;
+              z-index: -1; }
+            html body div.appContainer .ng-isolate-scope .ng-isolate-scope div.newChortleContainer form.newform div.upload-file input#capture.input.chortle-form {
+              display: flex;
+              justify-content: center;
+              position: absolute;
+              z-index: 1;
+              color: white;
+              opacity: 0;
+              cursor: pointer; }
+          html body div.appContainer .ng-isolate-scope .ng-isolate-scope div.newChortleContainer form.newform input.chortle-form {
             display: flex;
             justify-content: center;
             flex-direction: row;
+            width: 270px;
+            height: 30px;
             margin: 10px; }
+          html body div.appContainer .ng-isolate-scope .ng-isolate-scope div.newChortleContainer form.newform input[type="text"],
+          html body div.appContainer .ng-isolate-scope .ng-isolate-scope div.newChortleContainer form.newform textarea {
+            min-height: 65px;
+            padding-top: 6px;
+            padding-bottom: 6px; }
+        html body div.appContainer .ng-isolate-scope .ng-isolate-scope div.newChortleContainer div.PEDbuttons {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          justify-content: space-around; }
+          html body div.appContainer .ng-isolate-scope .ng-isolate-scope div.newChortleContainer div.PEDbuttons button {
+            display: flex;
+            justify-content: center;
+            color: #702320;
+            background-color: transparent;
+            display: inline-block;
+            height: 38px;
+            padding: 0 30px;
+            text-align: center;
+            font-family: Helvetica;
+            font-size: 13px;
+            font-weight: 600;
+            line-height: 38px;
+            letter-spacing: 0.1rem;
+            text-transform: uppercase;
+            text-decoration: none;
+            white-space: nowrap;
+            border-radius: 5px;
+            border: 2px solid;
+            border-color: #CCE2F5;
+            cursor: pointer;
+            box-sizing: border-box;
+            margin: 1em; }
+          html body div.appContainer .ng-isolate-scope .ng-isolate-scope div.newChortleContainer div.PEDbuttons button:hover {
+            color: #CCE2F5;
+            border-color: #CCE2F5;
+            background-color: #d05e59;
+            outline: 0; }
   html body footer.footer {
     display: flex;
     justify-content: center;

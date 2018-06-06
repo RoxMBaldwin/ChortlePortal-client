@@ -166,6 +166,7 @@ html {
                 }
                 button.register:hover {
                   color: $coolColor;
+                  background-color: $lightenedWarm;
                   border-color: $coolColor;
                   outline: 0;
                 }
@@ -285,32 +286,111 @@ html {
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
             // width: 80%;
             font-family: $subFont;
-            background-color: $coolColor;
+            // background-color: $coolColor;
             margin: 0;
             form.newform {
               display: flex;
               flex-direction: column;
-              justify-content: center;
               align-items: center;
+              text-align: center;
               margin-top: 60px;
               margin-left: 5px;
               margin-right: 5px;
-              input {
-                width: 270px;
-                height: 30px;
-              }
-              input#capture.input{
+              div.upload-file{
                 display: flex;
+                flex-direction: column;
                 justify-content: center;
-                margin: 10px;
+                button {
+                  color: $warmColor;
+                  background-color: $button-background-color;
+                  display: $buttonDisplay;
+                  height: $buttonHeight;
+                  padding: $buttonPadding;
+                  text-align: $button-text-align;
+                  font-family: $subFont;
+                  font-size: $button-font-size;
+                  font-weight: $button-font-weight;
+                  line-height: $button-line-height;
+                  letter-spacing: $button-letter-spacing;
+                  text-transform: $button-text-transform;
+                  text-decoration: $button-text-decoration;
+                  white-space: $button-white-space;
+                  border-radius: $button-border-radius;
+                  border: $buttonBorder;
+                  border-color: $coolColor;
+                  cursor: $buttonCursor;
+                  box-sizing: $button-box-sizing;
+                  margin: $buttonMargin;
+                  position: sticky;
+                  z-index: -1;
+                }
+                input#capture.input.chortle-form {
+                  display: flex;
+                  justify-content: center;
+                  position: absolute;
+                  z-index: 1;
+                  color: white;
+                  opacity: 0;
+                  cursor: $buttonCursor;
+                }
               }
-              .chortle-form {
+              input.chortle-form {
                 display: flex;
                 justify-content: center;
                 flex-direction: row;
+                width: 270px;
+                height: 30px;
                 margin: 10px;
+
+              }
+              input[type="text"],
+              textarea {
+                min-height: 65px;
+                padding-top: 6px;
+                padding-bottom: 6px; }
+
+              // input {
+              //   width: 270px;
+              //   height: 30px;
+              // }
+            }
+            div.PEDbuttons {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              justify-content: space-around;
+              button {
+                display: flex;
+                justify-content: center;
+                color: $warmColor;
+                background-color: $button-background-color;
+                display: $buttonDisplay;
+                height: $buttonHeight;
+                padding: $buttonPadding;
+                text-align: $button-text-align;
+                font-family: $subFont;
+                font-size: $button-font-size;
+                font-weight: $button-font-weight;
+                line-height: $button-line-height;
+                letter-spacing: $button-letter-spacing;
+                text-transform: $button-text-transform;
+                text-decoration: $button-text-decoration;
+                white-space: $button-white-space;
+                border-radius: $button-border-radius;
+                border: $buttonBorder;
+                border-color: $coolColor;
+                cursor: $buttonCursor;
+                box-sizing: $button-box-sizing;
+                margin: $buttonMargin;
+              }
+              button:hover {
+                color: $coolColor;
+                border-color: $coolColor;
+                background-color: $lightenedWarm;
+                outline: 0;
               }
             }
           }

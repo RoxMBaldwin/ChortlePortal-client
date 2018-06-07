@@ -2,7 +2,7 @@
   <form class="newform" action="index.html" method="post">
     <div class="upload-file">
       <label for="file" class="chortle-form"/>
-      <button>upload picture</button>
+      <button><i class="fas fa-camera"></i></button>
       <input fileread="$ctrl.file" class="input chortle-form" id="capture" type="file" accept="image/*;capture=camera"/>
     </div>
     <label for="comment"/>
@@ -10,7 +10,8 @@
   </form>
   <div class="PEDbuttons">
     <button type="button" name="button"
-    ng-click="$ctrl.sendinfo($ctrl.newentries, comment, $ctrl.file, username, $ctrl.formview)"
-    >Post</button>
+    ng-click="$ctrl.sendinfo($ctrl.newentries, comment, $ctrl.file, username, $ctrl.formview)">
+      <i class="fas fa-plus"></i>
+    </button>
   </div>
 </div>

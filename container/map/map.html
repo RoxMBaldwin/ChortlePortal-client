@@ -2,13 +2,13 @@
     <div ng-show = "$ctrl.defaultvalue.view" class="userMap">
       <div class="row">
         <div class="twelve columns">
-          <style>
+          <!-- <style>
             .mapboxgl-popup {
               max-width: 400px;
               font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
               color: black;
             }
-          </style>
+          </style> -->
           <div id='map'/>
           <script>
             $(document).ready(function(){
@@ -37,7 +37,7 @@
                   {
                     "type": "Feature",
                     "properties": {
-                      "description": "<a href='" + images[i] + "'><img class='poupImage' src='" + images[i] + "' height='200' width='200' alt='chortle image'/></a></br></br>" + comments[i] + "</br><input type='button' value='Edit'></button>" + "<input type='button' value='Delete'></button></br>",
+                      "description": "<a href='" + images[i] + "'><img class='poupImage' src='" + images[i] + "' height='200' width='200' alt='chortle image'/></a></br></br>" + "<div class='comments'>" + comments[i] + "</div>" + "</br><div class='inputs'>" + "<input type='button' value='Delete' class='mapInput'></input></div></br>",
                       "icon": "star",
                     },
                     "geometry": {
@@ -55,7 +55,7 @@
               container: 'map', // container id
               style: 'mapbox://styles/mapbox/dark-v9',
               center: [-105.0072288, 39.7577643], // starting position -104.99, 39.73
-              zoom: 14 // starting zoom
+              zoom: 20 // starting zoom
             });
 
             // Add zoom and rotation controls to the map.
@@ -104,8 +104,8 @@
       </div>
       <div class="addButton">
         <button class="addButton" type="button" name="button"
-          ng-click = "$ctrl.toggleform($ctrl.defaultvalue)"
-        >+
+          ng-click = "$ctrl.toggleform($ctrl.defaultvalue)">
+          <i class="fas fa-plus"></i>
         </button>
       </div>
     </div>

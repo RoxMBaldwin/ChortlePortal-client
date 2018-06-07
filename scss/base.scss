@@ -4,10 +4,13 @@ $subFont: Helvetica;
 $warmColor: #702320;
 $lightenedWarm: lighten($warmColor, 30%);
 $coolColor: #CCE2F5;
+$darkenCool: darken($coolColor, 50%);
 $secondaryCool: #88BDD1;
 $coolGradient: linear-gradient(to bottom right,#A6342F, #C75F5A);
 
-$button-background-color: transparent;
+$iconSize: 20px;
+
+$button-background-color: #ffffff;
 $buttonDisplay: inline-block;
 $buttonHeight: 38px;
 $buttonPadding: 0 30px;
@@ -240,6 +243,70 @@ html {
             div.twelve.columns {
               display: flex;
               justify-content: center;
+              // max-width: 400px;
+              font-family: $subFont;
+              font-size: 12px/20px;
+              color: #000000;
+              // background-color: $warmColor;
+              // border: $buttonBorder $warmColor;
+              // border-radius: $button-border-radius;
+              font-weight: $button-font-weight;
+              letter-spacing: $button-letter-spacing;
+              #map{
+                div.mapboxgl-popup-content {
+                  background-color: $coolColor;
+                  border: $buttonBorder $coolColor;
+                  border-radius: $button-border-radius;
+                  button.mapboxgl-popup-close-button {
+                    font-family: $mainFont;
+                    font-size: 30px;
+                    color: #ffffff;
+                    margin: 0px 6px 10px 10px
+                  }
+                }
+                div.comments {
+                  font-family: $subFont;
+                  font-size: $button-font-size;
+                  font-weight: 400;
+                  text-transform: uppercase;
+                  letter-spacing: $button-letter-spacing;
+                  color: $darkenCool;
+                  margin: 0 1.2em;
+                  text-align: center;
+                }
+                div.inputs{
+                  display: flex;
+                  flex-direction: column;
+                  input.mapInput {
+                    color: $warmColor;
+                    background-color: $button-background-color;
+                    display: $buttonDisplay;
+                    height: $buttonHeight;
+                    padding: $buttonPadding;
+                    text-align: $button-text-align;
+                    font-family: $subFont;
+                    font-size: $button-font-size;
+                    font-weight: $button-font-weight;
+                    line-height: $button-line-height;
+                    letter-spacing: $button-letter-spacing;
+                    text-transform: $button-text-transform;
+                    text-decoration: $button-text-decoration;
+                    white-space: $button-white-space;
+                    border-radius: $button-border-radius;
+                    border: $buttonBorder;
+                    border-color: $coolColor;
+                    cursor: $buttonCursor;
+                    box-sizing: $button-box-sizing;
+                    margin: $buttonMargin 0;
+                  }
+                  input.mapInput:hover {
+                    color: $coolColor;
+                    border-color: $coolColor;
+                    background-color: $lightenedWarm;
+                    outline: 0;
+                  }
+                }
+              }
             }
             div.addButton {
               display: flex;
@@ -257,7 +324,7 @@ html {
                 padding: $buttonPadding;
                 text-align: $button-text-align;
                 font-family: $subFont;
-                font-size: $button-font-size;
+                font-size: $iconSize;
                 font-weight: $button-font-weight;
                 line-height: $button-line-height;
                 letter-spacing: $button-letter-spacing;
@@ -292,12 +359,13 @@ html {
             form.newform {
               display: flex;
               flex-direction: column;
+              background-color: $coolColor;
+              border: $buttonBorder $coolColor;
+              border-radius: $button-border-radius;
               align-items: center;
               text-align: center;
-              margin-top: 60px;
-              margin-left: 5px;
-              margin-right: 5px;
-              margin-bottom: 50px;
+              padding: 40px 10px;
+              margin: 60px 10px 30px 10px;
               div.upload-file{
                 display: flex;
                 flex-direction: column;
@@ -308,10 +376,10 @@ html {
                   background-color: $button-background-color;
                   display: $buttonDisplay;
                   height: $buttonHeight;
-                  padding: $buttonPadding;
+                  padding: 0 30px;
                   text-align: $button-text-align;
                   font-family: $subFont;
-                  font-size: $button-font-size;
+                  font-size: $iconSize;
                   font-weight: $button-font-weight;
                   line-height: $button-line-height;
                   letter-spacing: $button-letter-spacing;
@@ -325,7 +393,7 @@ html {
                   box-sizing: $button-box-sizing;
                   margin: $buttonMargin;
                   position: sticky;
-                  z-index: -1;
+                  z-index: 0;
                 }
                 input#capture.input.chortle-form {
                   display: flex;
@@ -341,14 +409,14 @@ html {
                 display: flex;
                 justify-content: center;
                 flex-direction: row;
-                width: 270px;
+                width: 180px;
                 height: 30px;
-                margin: 10px;
+                margin: 0 20px;
               }
               input[type="text"],
               textarea {
-                // font-style: italic;
-                border: 2px solid $warmColor;
+                text-align: center;
+                border: $buttonBorder $warmColor;
                 border-radius: $button-border-radius;
                 padding: 6px 6px 6px 8px;
               }
@@ -368,7 +436,7 @@ html {
                 padding: $buttonPadding;
                 text-align: $button-text-align;
                 font-family: $subFont;
-                font-size: $button-font-size;
+                font-size: $iconSize;
                 font-weight: $button-font-weight;
                 line-height: $button-line-height;
                 letter-spacing: $button-letter-spacing;
@@ -380,7 +448,6 @@ html {
                 border-color: $coolColor;
                 cursor: $buttonCursor;
                 box-sizing: $button-box-sizing;
-                margin: $buttonMargin;
               }
               button:hover {
                 color: $coolColor;
@@ -407,7 +474,7 @@ html {
 
   @media (min-width: 310px) {
     #map {
-      height: 400px;
+      height: 450px;
       width: 300px;
     }
   }

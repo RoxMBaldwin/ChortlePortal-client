@@ -1,19 +1,19 @@
 $mainFont: 'Averia Libre', cursive;
 $subFont: Helvetica;
 
-$warmColor: #702320;
+$warmColor: #ABA954;
 $lightenedWarm: lighten($warmColor, 30%);
 $coolColor: #CCE2F5;
 $darkenCool: darken($coolColor, 50%);
 $secondaryCool: #88BDD1;
-$coolGradient: linear-gradient(to bottom right,#A6342F, #C75F5A);
+$coolGradient: linear-gradient(to bottom right,#D0BDFF, #73688C);
 
 $iconSize: 20px;
 
 $button-background-color: #ffffff;
 $buttonDisplay: inline-block;
 $buttonHeight: 38px;
-$buttonPadding: 0 30px;
+$buttonPadding: 0 24px;
 $button-text-align: center;
 $button-font-size: 13px;
 $button-font-weight: 600;
@@ -22,7 +22,7 @@ $button-letter-spacing: .1rem;
 $button-text-transform: uppercase;
 $button-text-decoration: none;
 $button-white-space: nowrap;
-$button-border-radius: 5px;
+$button-border-radius: 10px;
 $buttonBorder: 2px solid;
 $buttonCursor: pointer;
 $button-box-sizing: border-box;
@@ -139,7 +139,7 @@ html {
                     margin: $buttonMargin;
                   }
                   button.loginButton:hover {
-                    color: $coolColor;
+                    color: $darkenCool;
                     border-color: $coolColor;
                     background-color: $lightenedWarm;
                     outline: 0;
@@ -168,7 +168,7 @@ html {
                   margin: $buttonMargin;
                 }
                 button.register:hover {
-                  color: $coolColor;
+                  color: $darkenCool;
                   background-color: $lightenedWarm;
                   border-color: $coolColor;
                   outline: 0;
@@ -214,12 +214,17 @@ html {
         margin: .75em;
         div.username-row {
           h6 {
+            display: flex;
+            flex-direction: column;
             font-family: $subFont;
+            font-size: 12px;
+            color: $coolColor;
             letter-spacing: $button-letter-spacing;
-            margin: 0 10px 0 10px;
+            margin: 0 10px;
             a {
               text-decoration: none;
               letter-spacing: $button-letter-spacing;
+              margin-top: 10px;
             }
           }
         }
@@ -299,12 +304,6 @@ html {
                     box-sizing: $button-box-sizing;
                     margin: $buttonMargin 0;
                   }
-                  input.mapInput:hover {
-                    color: $coolColor;
-                    border-color: $coolColor;
-                    background-color: $lightenedWarm;
-                    outline: 0;
-                  }
                 }
               }
             }
@@ -339,7 +338,7 @@ html {
                 margin: $buttonMargin;
               }
               button.addButton:hover {
-                color: $coolColor;
+                color: $darkenCool;
                 border-color: $coolColor;
                 background-color: $lightenedWarm;
                 outline: 0;
@@ -450,7 +449,7 @@ html {
                 box-sizing: $button-box-sizing;
               }
               button:hover {
-                color: $coolColor;
+                color: $darkenCool;
                 border-color: $coolColor;
                 background-color: $lightenedWarm;
                 outline: 0;

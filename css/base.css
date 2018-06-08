@@ -12,8 +12,8 @@ html {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        color: #702320;
-        background: linear-gradient(to bottom right, #A6342F, #C75F5A);
+        color: #ABA954;
+        background: linear-gradient(to bottom right, #D0BDFF, #73688C);
         font-family: "Averia Libre", cursive; }
         html body div.wrapper header .nav img.logo {
           margin: .75em;
@@ -49,7 +49,7 @@ html {
                 display: flex;
                 justify-content: center;
                 align-items: baseline;
-                color: #702320;
+                color: #ABA954;
                 font-family: Helvetica;
                 font-size: 14px;
                 font-weight: 600;
@@ -65,18 +65,18 @@ html {
                   -webkit-appearance: none;
                   -moz-appearance: none;
                   appearance: none;
-                  border: 1px solid #d05e59;
+                  border: 1px solid #ddddbb;
                   border-radius: 4px;
                   height: 1em;
                   padding: .5em; }
           html body div.wrapper main .login form.login-form.container div div.mainButtons a.mainLink {
             text-decoration: none; }
             html body div.wrapper main .login form.login-form.container div div.mainButtons a.mainLink button.loginButton {
-              color: #702320;
+              color: #ABA954;
               background-color: #ffffff;
               display: inline-block;
               height: 38px;
-              padding: 0 30px;
+              padding: 0 24px;
               text-align: center;
               font-family: Helvetica;
               font-size: 13px;
@@ -86,23 +86,23 @@ html {
               text-transform: uppercase;
               text-decoration: none;
               white-space: nowrap;
-              border-radius: 5px;
+              border-radius: 10px;
               border: 2px solid;
               border-color: #CCE2F5;
               cursor: pointer;
               box-sizing: border-box;
               margin: 1em; }
             html body div.wrapper main .login form.login-form.container div div.mainButtons a.mainLink button.loginButton:hover {
-              color: #CCE2F5;
+              color: #2066a2;
               border-color: #CCE2F5;
-              background-color: #d05e59;
+              background-color: #ddddbb;
               outline: 0; }
           html body div.wrapper main .login form.login-form.container div div.mainButtons button.register {
-            color: #702320;
+            color: #ABA954;
             background-color: #ffffff;
             display: inline-block;
             height: 38px;
-            padding: 0 30px;
+            padding: 0 24px;
             text-align: center;
             font-family: Helvetica;
             font-size: 13px;
@@ -112,15 +112,15 @@ html {
             text-transform: uppercase;
             text-decoration: none;
             white-space: nowrap;
-            border-radius: 5px;
+            border-radius: 10px;
             border: 2px solid;
             border-color: #CCE2F5;
             cursor: pointer;
             box-sizing: border-box;
             margin: 1em; }
           html body div.wrapper main .login form.login-form.container div div.mainButtons button.register:hover {
-            color: #CCE2F5;
-            background-color: #d05e59;
+            color: #2066a2;
+            background-color: #ddddbb;
             border-color: #CCE2F5;
             outline: 0; }
     html body footer.footer {
@@ -128,15 +128,15 @@ html {
       justify-content: center;
       font-family: "Averia Libre", cursive;
       color: #CCE2F5;
-      background: linear-gradient(to bottom right, #A6342F, #C75F5A);
+      background: linear-gradient(to bottom right, #D0BDFF, #73688C);
       height: 50px; }
   html body nav.nav {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
-    color: #702320;
-    background: linear-gradient(to bottom right, #A6342F, #C75F5A);
+    color: #ABA954;
+    background: linear-gradient(to bottom right, #D0BDFF, #73688C);
     font-family: "Averia Libre", cursive; }
     html body nav.nav img.logo {
       display: flex;
@@ -152,12 +152,17 @@ html {
       padding: 10px 10px 10px 20px;
       margin: .75em; }
       html body nav.nav div.userInfo div.username-row h6 {
+        display: flex;
+        flex-direction: column;
         font-family: Helvetica;
+        font-size: 12px;
+        color: #CCE2F5;
         letter-spacing: 0.1rem;
-        margin: 0 10px 0 10px; }
+        margin: 0 10px; }
         html body nav.nav div.userInfo div.username-row h6 a {
           text-decoration: none;
-          letter-spacing: 0.1rem; }
+          letter-spacing: 0.1rem;
+          margin-top: 10px; }
   html body div.appContainer {
     min-height: 90%;
     margin-bottom: -50px;
@@ -184,7 +189,7 @@ html {
           html body div.appContainer .ng-isolate-scope map.ng-isolate-scope div.userMap div.twelve.columns #map div.mapboxgl-popup-content {
             background-color: #CCE2F5;
             border: 2px solid #CCE2F5;
-            border-radius: 5px; }
+            border-radius: 10px; }
             html body div.appContainer .ng-isolate-scope map.ng-isolate-scope div.userMap div.twelve.columns #map div.mapboxgl-popup-content button.mapboxgl-popup-close-button {
               font-family: "Averia Libre", cursive;
               font-size: 30px;
@@ -203,11 +208,11 @@ html {
             display: flex;
             flex-direction: column; }
             html body div.appContainer .ng-isolate-scope map.ng-isolate-scope div.userMap div.twelve.columns #map div.inputs input.mapInput {
-              color: #702320;
+              color: #ABA954;
               background-color: #ffffff;
               display: inline-block;
               height: 38px;
-              padding: 0 30px;
+              padding: 0 24px;
               text-align: center;
               font-family: Helvetica;
               font-size: 13px;
@@ -217,17 +222,12 @@ html {
               text-transform: uppercase;
               text-decoration: none;
               white-space: nowrap;
-              border-radius: 5px;
+              border-radius: 10px;
               border: 2px solid;
               border-color: #CCE2F5;
               cursor: pointer;
               box-sizing: border-box;
               margin: 1em 0; }
-            html body div.appContainer .ng-isolate-scope map.ng-isolate-scope div.userMap div.twelve.columns #map div.inputs input.mapInput:hover {
-              color: #CCE2F5;
-              border-color: #CCE2F5;
-              background-color: #d05e59;
-              outline: 0; }
         html body div.appContainer .ng-isolate-scope map.ng-isolate-scope div.userMap div.addButton {
           display: flex;
           justify-content: center;
@@ -237,11 +237,11 @@ html {
           html body div.appContainer .ng-isolate-scope map.ng-isolate-scope div.userMap div.addButton button.addButton {
             display: flex;
             justify-content: center;
-            color: #702320;
+            color: #ABA954;
             background-color: #ffffff;
             display: inline-block;
             height: 38px;
-            padding: 0 30px;
+            padding: 0 24px;
             text-align: center;
             font-family: Helvetica;
             font-size: 20px;
@@ -251,16 +251,16 @@ html {
             text-transform: uppercase;
             text-decoration: none;
             white-space: nowrap;
-            border-radius: 5px;
+            border-radius: 10px;
             border: 2px solid;
             border-color: #CCE2F5;
             cursor: pointer;
             box-sizing: border-box;
             margin: 1em; }
           html body div.appContainer .ng-isolate-scope map.ng-isolate-scope div.userMap div.addButton button.addButton:hover {
-            color: #CCE2F5;
+            color: #2066a2;
             border-color: #CCE2F5;
-            background-color: #d05e59;
+            background-color: #ddddbb;
             outline: 0; }
       html body div.appContainer .ng-isolate-scope .ng-isolate-scope div.newChortleContainer {
         display: flex;
@@ -274,7 +274,7 @@ html {
           flex-direction: column;
           background-color: #CCE2F5;
           border: 2px solid #CCE2F5;
-          border-radius: 5px;
+          border-radius: 10px;
           align-items: center;
           text-align: center;
           padding: 40px 10px;
@@ -285,7 +285,7 @@ html {
             justify-content: center;
             margin: 20px 0; }
             html body div.appContainer .ng-isolate-scope .ng-isolate-scope div.newChortleContainer form.newform div.upload-file button {
-              color: #702320;
+              color: #ABA954;
               background-color: #ffffff;
               display: inline-block;
               height: 38px;
@@ -299,9 +299,9 @@ html {
               text-transform: uppercase;
               text-decoration: none;
               white-space: nowrap;
-              border-radius: 5px;
+              border-radius: 10px;
               border: 2px solid;
-              border-color: #702320;
+              border-color: #ABA954;
               cursor: pointer;
               box-sizing: border-box;
               margin: 1em;
@@ -325,8 +325,8 @@ html {
           html body div.appContainer .ng-isolate-scope .ng-isolate-scope div.newChortleContainer form.newform input[type="text"],
           html body div.appContainer .ng-isolate-scope .ng-isolate-scope div.newChortleContainer form.newform textarea {
             text-align: center;
-            border: 2px solid #702320;
-            border-radius: 5px;
+            border: 2px solid #ABA954;
+            border-radius: 10px;
             padding: 6px 6px 6px 8px; }
         html body div.appContainer .ng-isolate-scope .ng-isolate-scope div.newChortleContainer div.PEDbuttons {
           display: flex;
@@ -336,11 +336,11 @@ html {
           html body div.appContainer .ng-isolate-scope .ng-isolate-scope div.newChortleContainer div.PEDbuttons button {
             display: flex;
             justify-content: center;
-            color: #702320;
+            color: #ABA954;
             background-color: #ffffff;
             display: inline-block;
             height: 38px;
-            padding: 0 30px;
+            padding: 0 24px;
             text-align: center;
             font-family: Helvetica;
             font-size: 20px;
@@ -350,22 +350,22 @@ html {
             text-transform: uppercase;
             text-decoration: none;
             white-space: nowrap;
-            border-radius: 5px;
+            border-radius: 10px;
             border: 2px solid;
             border-color: #CCE2F5;
             cursor: pointer;
             box-sizing: border-box; }
           html body div.appContainer .ng-isolate-scope .ng-isolate-scope div.newChortleContainer div.PEDbuttons button:hover {
-            color: #CCE2F5;
+            color: #2066a2;
             border-color: #CCE2F5;
-            background-color: #d05e59;
+            background-color: #ddddbb;
             outline: 0; }
   html body footer.footer {
     display: flex;
     justify-content: center;
     font-family: "Averia Libre", cursive;
     color: #CCE2F5;
-    background: linear-gradient(to bottom right, #A6342F, #C75F5A);
+    background: linear-gradient(to bottom right, #D0BDFF, #73688C);
     height: 50px; }
 
 /* Media Query */

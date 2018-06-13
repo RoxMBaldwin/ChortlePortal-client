@@ -14,15 +14,16 @@ html {
         align-items: center;
         color: #ABA954;
         background: linear-gradient(to bottom right, #D0BDFF, #73688C);
-        font-family: "Averia Libre", cursive; }
+        font-family: "Geo", sans-serif; }
         html body div.wrapper header .nav img.logo {
-          margin: .75em;
-          height: 5em;
-          width: 5em; }
+          margin: 1em 0 0em 0;
+          height: 6em;
+          width: 6em; }
         html body div.wrapper header .nav h1.name {
           color: #CCE2F5;
-          font-family: "Averia Libre", cursive;
-          font-size: 2em;
+          font-family: "Geo", sans-serif;
+          font-size: 4em;
+          letter-spacing: 0.1rem;
           text-align: center;
           margin: 10px 0 20px 0; }
       html body div.wrapper main .login {
@@ -33,7 +34,7 @@ html {
         html body div.wrapper main .login form.login-form.container {
           display: flex;
           justify-content: center;
-          margin-bottom: 30px; }
+          margin: 20px 0; }
           html body div.wrapper main .login form.login-form.container div .row {
             display: flex;
             justify-content: center;
@@ -126,7 +127,9 @@ html {
     html body footer.footer {
       display: flex;
       justify-content: center;
-      font-family: "Averia Libre", cursive;
+      font-family: "Geo", sans-serif;
+      font-size: 16px;
+      letter-spacing: 0.1rem;
       color: #CCE2F5;
       background: linear-gradient(to bottom right, #D0BDFF, #73688C);
       height: 50px; }
@@ -137,14 +140,14 @@ html {
     align-items: center;
     color: #ABA954;
     background: linear-gradient(to bottom right, #D0BDFF, #73688C);
-    font-family: "Averia Libre", cursive; }
+    font-family: "Geo", sans-serif; }
     html body nav.nav img.logo {
       display: flex;
       align-items: center;
-      padding: 10px 10px 10px 20px;
-      margin: .75em;
-      height: 5em;
-      width: 5em; }
+      padding: 10px;
+      margin: .75em 20px;
+      height: 4em;
+      width: 4em; }
     html body nav.nav div.userInfo {
       display: flex;
       flex-direction: row;
@@ -187,14 +190,21 @@ html {
           font-weight: 600;
           letter-spacing: 0.1rem; }
           html body div.appContainer .ng-isolate-scope map.ng-isolate-scope div.userMap div.twelve.columns #map div.mapboxgl-popup-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
             background-color: #CCE2F5;
             border: 2px solid #CCE2F5;
             border-radius: 10px; }
             html body div.appContainer .ng-isolate-scope map.ng-isolate-scope div.userMap div.twelve.columns #map div.mapboxgl-popup-content button.mapboxgl-popup-close-button {
-              font-family: "Averia Libre", cursive;
+              font-family: "Geo", sans-serif;
               font-size: 30px;
               color: #ffffff;
               margin: 0px 6px 10px 10px; }
+            html body div.appContainer .ng-isolate-scope map.ng-isolate-scope div.userMap div.twelve.columns #map div.mapboxgl-popup-content a {
+              display: flex;
+              justify-content: center;
+              margin-top: 8px; }
           html body div.appContainer .ng-isolate-scope map.ng-isolate-scope div.userMap div.twelve.columns #map div.comments {
             font-family: Helvetica;
             font-size: 13px;
@@ -206,15 +216,16 @@ html {
             text-align: center; }
           html body div.appContainer .ng-isolate-scope map.ng-isolate-scope div.userMap div.twelve.columns #map div.inputs {
             display: flex;
-            flex-direction: column; }
+            flex-direction: column;
+            align-items: center; }
             html body div.appContainer .ng-isolate-scope map.ng-isolate-scope div.userMap div.twelve.columns #map div.inputs input.mapInput {
+              padding: 0 24px;
               color: #ABA954;
               background-color: #ffffff;
               display: inline-block;
               height: 38px;
-              padding: 0 24px;
               text-align: center;
-              font-family: Helvetica;
+              font-family: "Geo", sans-serif;
               font-size: 13px;
               font-weight: 600;
               line-height: 38px;
@@ -228,6 +239,11 @@ html {
               cursor: pointer;
               box-sizing: border-box;
               margin: 1em 0; }
+            html body div.appContainer .ng-isolate-scope map.ng-isolate-scope div.userMap div.twelve.columns #map div.inputs input.mapInput:hover {
+              color: #2066a2;
+              border-color: #CCE2F5;
+              background-color: #ddddbb;
+              outline: 0; }
         html body div.appContainer .ng-isolate-scope map.ng-isolate-scope div.userMap div.addButton {
           display: flex;
           justify-content: center;
@@ -363,7 +379,7 @@ html {
   html body footer.footer {
     display: flex;
     justify-content: center;
-    font-family: "Averia Libre", cursive;
+    font-family: "Geo", sans-serif;
     color: #CCE2F5;
     background: linear-gradient(to bottom right, #D0BDFF, #73688C);
     height: 50px; }

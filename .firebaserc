@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "chortle-portal"
+    "default": "chortle-portal",
+    "staging": "welcome-to-chortle-portal"
   }
 }

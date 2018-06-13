@@ -1,4 +1,6 @@
-$mainFont: 'Averia Libre', cursive;
+$mainFont: 'Geo', sans-serif;
+// $mainFont: 'VT323', monospace;
+
 $subFont: Helvetica;
 
 $warmColor: #ABA954;
@@ -49,14 +51,15 @@ html {
           // height: 14vh;
           font-family: $mainFont;
           img.logo {
-              margin: .75em;
-              height: 5em;
-              width: 5em;
+              margin: 1em 0 0em 0;
+              height: 6em;
+              width: 6em;
             }
             h1.name {
               color: $coolColor;
               font-family: $mainFont;
-              font-size: 2em;
+              font-size: 4em;
+              letter-spacing: $button-letter-spacing;
               text-align: center;
               margin: 10px 0 20px 0;
             }
@@ -71,7 +74,7 @@ html {
           form.login-form.container {
             display: flex;
             justify-content: center;
-            margin-bottom: 30px;
+            margin: 20px 0;
             div {
               .row {
                 display: flex;
@@ -183,6 +186,8 @@ html {
       display: flex;
       justify-content: center;
       font-family: $mainFont;
+      font-size: 16px;
+      letter-spacing: $button-letter-spacing;
       color: $coolColor;
       background: $coolGradient;
       height: 50px;
@@ -201,10 +206,10 @@ html {
       img.logo {
         display: flex;
         align-items: center;
-        padding: 10px 10px 10px 20px;
-        margin: .75em;
-        height: 5em;
-        width: 5em;
+        padding: 10px ;
+        margin: .75em 20px;
+        height: 4em;
+        width: 4em;
       }
       div.userInfo {
         display: flex;
@@ -259,6 +264,9 @@ html {
               letter-spacing: $button-letter-spacing;
               #map{
                 div.mapboxgl-popup-content {
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
                   background-color: $coolColor;
                   border: $buttonBorder $coolColor;
                   border-radius: $button-border-radius;
@@ -267,6 +275,11 @@ html {
                     font-size: 30px;
                     color: #ffffff;
                     margin: 0px 6px 10px 10px
+                  }
+                  a {
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 8px;
                   }
                 }
                 div.comments {
@@ -282,14 +295,15 @@ html {
                 div.inputs{
                   display: flex;
                   flex-direction: column;
+                  align-items: center;
                   input.mapInput {
+                    padding: $buttonPadding;
                     color: $warmColor;
                     background-color: $button-background-color;
                     display: $buttonDisplay;
                     height: $buttonHeight;
-                    padding: $buttonPadding;
                     text-align: $button-text-align;
-                    font-family: $subFont;
+                    font-family: $mainFont;
                     font-size: $button-font-size;
                     font-weight: $button-font-weight;
                     line-height: $button-line-height;
@@ -303,6 +317,12 @@ html {
                     cursor: $buttonCursor;
                     box-sizing: $button-box-sizing;
                     margin: $buttonMargin 0;
+                  }
+                  input.mapInput:hover {
+                    color: $darkenCool;
+                    border-color: $coolColor;
+                    background-color: $lightenedWarm;
+                    outline: 0;
                   }
                 }
               }

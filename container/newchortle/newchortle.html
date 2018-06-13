@@ -2,19 +2,23 @@
   <form class="newform" action="index.html" method="post">
     <div class="upload-file">
       <label for="file" class="chortle-form"/>
-      <button><i class="fas fa-camera"></i></button>
+      <button disabled="disabled"><i class="fas fa-camera"></i></button>
       <input fileread="$ctrl.file" class="input chortle-form" id="capture" type="file" accept="image/*;capture=camera"/>
-      <a><img id="previewimg"/></a>
-      <script type="text/javascript">
-        $(document).ready(function(){
-          $("#capture").change(function(event){
-            let previewImg = $("#previewimg")
-            let imgSource = URL.createObjectURL(this.files[0])
-            previewImg.attr('src', imgSource)
-          })
-        })
-      </script>
     </div>
+    <div class="imgPreview">
+      <a>
+        <img id="previewimg" height="80%" width="80%"/>
+      </a>
+    </div>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("#capture").change(function(event){
+          let previewImg = $("#previewimg")
+          let imgSource = URL.createObjectURL(this.files[0])
+          previewImg.attr('src', imgSource)
+        })
+      })
+    </script>
     <label for="comment"/>
     <input ng-model="comment" type="text" class="chortle-form" name="" placeholder="...add comment for Chortle..."/>
   </form>

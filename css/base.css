@@ -169,7 +169,7 @@ html {
   html body div.appContainer {
     min-height: 90%;
     margin-bottom: -50px;
-    /*map componet*/ }
+    /*map component*/ }
     html body div.appContainer .ng-isolate-scope {
       display: flex;
       justify-content: center;
@@ -189,61 +189,64 @@ html {
           color: #000000;
           font-weight: 600;
           letter-spacing: 0.1rem; }
-          html body div.appContainer .ng-isolate-scope map.ng-isolate-scope div.userMap div.twelve.columns #map div.mapboxgl-popup-content {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            background-color: #CCE2F5;
-            border: 2px solid #CCE2F5;
+          html body div.appContainer .ng-isolate-scope map.ng-isolate-scope div.userMap div.twelve.columns #map {
+            border: 14px solid #ABA954;
             border-radius: 10px; }
-            html body div.appContainer .ng-isolate-scope map.ng-isolate-scope div.userMap div.twelve.columns #map div.mapboxgl-popup-content button.mapboxgl-popup-close-button {
-              font-family: "Geo", sans-serif;
-              font-size: 30px;
-              color: #ffffff;
-              margin: 0px 6px 10px 10px; }
-            html body div.appContainer .ng-isolate-scope map.ng-isolate-scope div.userMap div.twelve.columns #map div.mapboxgl-popup-content a {
+            html body div.appContainer .ng-isolate-scope map.ng-isolate-scope div.userMap div.twelve.columns #map div.mapboxgl-popup-content {
               display: flex;
+              flex-direction: column;
               justify-content: center;
-              margin-top: 8px; }
-          html body div.appContainer .ng-isolate-scope map.ng-isolate-scope div.userMap div.twelve.columns #map div.comments {
-            font-family: Helvetica;
-            font-size: 13px;
-            font-weight: 400;
-            text-transform: uppercase;
-            letter-spacing: 0.1rem;
-            color: #2066a2;
-            margin: 0 1.2em;
-            text-align: center; }
-          html body div.appContainer .ng-isolate-scope map.ng-isolate-scope div.userMap div.twelve.columns #map div.inputs {
-            display: flex;
-            flex-direction: column;
-            align-items: center; }
-            html body div.appContainer .ng-isolate-scope map.ng-isolate-scope div.userMap div.twelve.columns #map div.inputs input.mapInput {
-              padding: 0 24px;
-              color: #ABA954;
-              background-color: #ffffff;
-              display: inline-block;
-              height: 38px;
-              text-align: center;
-              font-family: "Geo", sans-serif;
+              background-color: #CCE2F5;
+              border: 2px solid #CCE2F5;
+              border-radius: 10px; }
+              html body div.appContainer .ng-isolate-scope map.ng-isolate-scope div.userMap div.twelve.columns #map div.mapboxgl-popup-content button.mapboxgl-popup-close-button {
+                font-family: "Geo", sans-serif;
+                font-size: 30px;
+                color: #ffffff;
+                margin: 0px 6px 10px 10px; }
+              html body div.appContainer .ng-isolate-scope map.ng-isolate-scope div.userMap div.twelve.columns #map div.mapboxgl-popup-content a {
+                display: flex;
+                justify-content: center;
+                margin-top: 8px; }
+            html body div.appContainer .ng-isolate-scope map.ng-isolate-scope div.userMap div.twelve.columns #map div.comments {
+              font-family: Helvetica;
               font-size: 13px;
-              font-weight: 600;
-              line-height: 38px;
-              letter-spacing: 0.1rem;
+              font-weight: 400;
               text-transform: uppercase;
-              text-decoration: none;
-              white-space: nowrap;
-              border-radius: 10px;
-              border: 2px solid;
-              border-color: #CCE2F5;
-              cursor: pointer;
-              box-sizing: border-box;
-              margin: 1em 0; }
-            html body div.appContainer .ng-isolate-scope map.ng-isolate-scope div.userMap div.twelve.columns #map div.inputs input.mapInput:hover {
+              letter-spacing: 0.1rem;
               color: #2066a2;
-              border-color: #CCE2F5;
-              background-color: #ddddbb;
-              outline: 0; }
+              margin: 0 1.2em;
+              text-align: center; }
+            html body div.appContainer .ng-isolate-scope map.ng-isolate-scope div.userMap div.twelve.columns #map div.inputs {
+              display: flex;
+              flex-direction: column;
+              align-items: center; }
+              html body div.appContainer .ng-isolate-scope map.ng-isolate-scope div.userMap div.twelve.columns #map div.inputs input.mapInput {
+                padding: 0 24px;
+                color: #ABA954;
+                background-color: #ffffff;
+                display: inline-block;
+                height: 38px;
+                text-align: center;
+                font-family: "Geo", sans-serif;
+                font-size: 13px;
+                font-weight: 600;
+                line-height: 38px;
+                letter-spacing: 0.1rem;
+                text-transform: uppercase;
+                text-decoration: none;
+                white-space: nowrap;
+                border-radius: 10px;
+                border: 2px solid;
+                border-color: #CCE2F5;
+                cursor: pointer;
+                box-sizing: border-box;
+                margin: 1em 0; }
+              html body div.appContainer .ng-isolate-scope map.ng-isolate-scope div.userMap div.twelve.columns #map div.inputs input.mapInput:hover {
+                color: #2066a2;
+                border-color: #CCE2F5;
+                background-color: #ddddbb;
+                outline: 0; }
         html body div.appContainer .ng-isolate-scope map.ng-isolate-scope div.userMap div.addButton {
           display: flex;
           justify-content: center;
@@ -284,7 +287,7 @@ html {
         align-items: center;
         flex-direction: column;
         font-family: Helvetica;
-        margin: 0; }
+        margin-bottom: 45px; }
         html body div.appContainer .ng-isolate-scope .ng-isolate-scope div.newChortleContainer form.newform {
           display: flex;
           flex-direction: column;
@@ -293,8 +296,8 @@ html {
           border-radius: 10px;
           align-items: center;
           text-align: center;
-          padding: 40px 10px;
-          margin: 60px 10px 30px 10px; }
+          padding: 25px;
+          margin: 30px 10px 30px 10px; }
           html body div.appContainer .ng-isolate-scope .ng-isolate-scope div.newChortleContainer form.newform div.upload-file {
             display: flex;
             flex-direction: column;
@@ -335,15 +338,15 @@ html {
             display: flex;
             justify-content: center;
             flex-direction: row;
-            width: 180px;
-            height: 30px;
-            margin: 0 20px; }
+            width: 200px;
+            height: 30px; }
           html body div.appContainer .ng-isolate-scope .ng-isolate-scope div.newChortleContainer form.newform input[type="text"],
           html body div.appContainer .ng-isolate-scope .ng-isolate-scope div.newChortleContainer form.newform textarea {
             text-align: center;
             border: 2px solid #ABA954;
             border-radius: 10px;
-            padding: 6px 6px 6px 8px; }
+            padding: 6px 6px 6px 8px;
+            margin-top: 30px; }
         html body div.appContainer .ng-isolate-scope .ng-isolate-scope div.newChortleContainer div.PEDbuttons {
           display: flex;
           align-items: center;

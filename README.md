@@ -20,6 +20,8 @@ Chortle Portal is a light-hearted, social application that connects Users to eac
 ## Deployed URLs
 [Client Deployed URL: Firebase](https://chortle-portal.firebaseapp.com/main.html)
 
+[Updated Deployed URL with UX/UI changes made by Roxanne:](https://welcome-to-chortle-portal.firebaseapp.com/)
+
 [Server Deployed URL: Heroku](https://salty-mountain-21631.herokuapp.com/)
 
 ## Repositories

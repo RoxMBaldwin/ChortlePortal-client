@@ -138,7 +138,7 @@ html {
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
-    color: #ABA954;
+    color: white;
     background: linear-gradient(to bottom right, #D0BDFF, #73688C);
     font-family: "Geo", sans-serif; }
     html body nav.nav img.logo {
@@ -154,6 +154,12 @@ html {
       align-items: center;
       padding: 10px 10px 10px 20px;
       margin: .75em; }
+      html body nav.nav div.userInfo div.usericon {
+        color: white;
+        height: 40px;
+        width: 40px;
+        font-size: 40px;
+        text-shadow: 0px 5px 10px #5D5E5E; }
       html body nav.nav div.userInfo div.username-row h6 {
         display: flex;
         flex-direction: column;
@@ -165,7 +171,8 @@ html {
         html body nav.nav div.userInfo div.username-row h6 a {
           text-decoration: none;
           letter-spacing: 0.1rem;
-          margin-top: 10px; }
+          margin-top: 10px;
+          color: #CCE2F5; }
   html body div.appContainer {
     min-height: 90%;
     margin-bottom: -50px;
@@ -287,6 +294,7 @@ html {
         align-items: center;
         flex-direction: column;
         font-family: Helvetica;
+        margin-top: 6em;
         margin-bottom: 45px; }
         html body div.appContainer .ng-isolate-scope .ng-isolate-scope div.newChortleContainer form.newform {
           display: flex;

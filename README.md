@@ -27,6 +27,7 @@ As a developer who is specifically interested in UX/UI development and design ch
 - *chortles* are represented by a star icon on the map, incorporate that visual into the logo for consistency
 
 **b) color**
+
 <img src="assets/colorPalette.png" width=30%/>
 
 - lighter background to contrast with the darker map
@@ -113,15 +114,15 @@ npm install
 
 **Landing Page:**
 
-<img src="https://user-images.githubusercontent.com/26422332/30708638-d185fb54-9ebc-11e7-872a-ab4c76642ec1.png" width=15%/>
+<img src="https://user-images.githubusercontent.com/26422332/30708638-d185fb54-9ebc-11e7-872a-ab4c76642ec1.png" width=25%/>
 
 **Main App:**
 
-<img src="https://user-images.githubusercontent.com/26422332/30708639-d5f383be-9ebc-11e7-9dee-b82cf6007769.png" width=15%/>
+<img src="https://user-images.githubusercontent.com/26422332/30708639-d5f383be-9ebc-11e7-9dee-b82cf6007769.png" width=25%/>
 
 **Post Chortle:**
 
-<img src="https://user-images.githubusercontent.com/26422332/30708420-1c5e67d4-9ebc-11e7-89b3-2a3a910611c7.png" width=15%/>
+<img src="https://user-images.githubusercontent.com/26422332/30708420-1c5e67d4-9ebc-11e7-89b3-2a3a910611c7.png" width=25%/>
 
 
 ## Story Tracker
@@ -130,38 +131,38 @@ npm install
 ## Updated UX/UI: Mobile Viewport | iPhone 6
 **Login:**
 
-<img src="assets/newLogin.png" width=15%/>
+<img src="assets/newLogin.png" width=25%/>
 
 **Map:**
 
-<img src="assets/newMap.png" width=15%/>
+<img src="assets/newMap.png" width=25%/>
 
 **Form:**
 
-<img src="assets/newForm.png" width=15%/>
-<img src="assets/newForm2.png" width=15%/>
+<img src="assets/newForm.png" width=25%/>
+<img src="assets/newForm2.png" width=25%/>
 
 **POST Success:**
 
-<img src="assets/newPost.png" width=15%/>
+<img src="assets/newPost.png" width=25%/>
 
 ## Group: Mobile Viewport | iPhone 6
 **Login:**
 
-<img src="assets/login.png" width=15%/>
+<img src="assets/login.png" width=25%/>
 
 **Map:**
 
-<img src="assets/application.png" width=15%/>
+<img src="assets/application.png" width=25%/>
 
 **Form:**
 
-<img src="assets/upload1.png" width=15%/>
-<img src="assets/upload2.png" width=15%/>
+<img src="assets/upload1.png" width=25%/>
+<img src="assets/upload2.png" width=25%/>
 
 **POST Success:**
 
-<img src="assets/POST-success.png" width=15%/>
+<img src="assets/POST-success.png" width=25%/>
 
 ## Future Implementations
 a) Add OAuth
